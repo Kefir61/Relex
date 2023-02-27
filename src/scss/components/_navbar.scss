@@ -1,0 +1,76 @@
+.navbar{
+    width: 200px;
+    height: 100px;
+    position: fixed;
+    top: 110px;
+    left: 60px;
+    @media (max-width:790px){
+        left: 30px;
+    }
+    @media (max-width:590px){
+        left: 10px;
+    }
+    @media (max-width:525px){
+        top: 80px;
+    }
+    @media (max-width:414px){
+        top: 80px;
+    }
+    & ul{
+        & li{
+            
+            margin-bottom: 10px;
+        }
+    }
+    &--link__application{
+        position: relative;
+        font-size: 18px;
+        @media (max-width:590px){
+            font-size: 14px;
+        }
+        &::before{
+            content: "";
+            position: absolute;
+            top:3px;
+            left: -30px;
+            width: 20px;
+            height: 20px;
+
+            background-image: url('../../assets/icons/application.svg');
+            background-size: cover;
+            @media (max-width:590px){
+                display: none;
+            }
+        }
+        &:hover{
+            text-decoration: underline;      
+        }
+    }
+
+    &--link__archive{
+        position: relative;
+        font-size: 18px;
+        @media (max-width:590px){
+            font-size: 14px;
+        }
+        &::before{
+            content: "";
+            position: absolute;
+            top:2px;
+            left: -30px;
+            width: 20px;
+            height: 20px;
+            background-image: url('../../assets/icons/archive.svg');
+            @media (max-width:590px){
+                display: none;
+            }
+        }
+        &:hover{
+            text-decoration: underline;  
+        }
+    }
+}
+
+.active--link{
+    text-decoration: underline;
+}

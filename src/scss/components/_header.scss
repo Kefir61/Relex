@@ -1,0 +1,81 @@
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 10px 30px;
+    height: 70px;
+    width: 100%;
+    background-color: white;
+    border-bottom: 3px solid rgb(52, 56, 61);
+    z-index: 3;
+    &--logo{
+        & img{
+            width: 100%;
+            height: 45px;
+        }
+    }
+    &--account{
+        & img{
+            width: 100%;
+            height: 45px;
+        }
+
+    }
+    &--login{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        &__arrowTop{
+            width: 15px;
+            height: 15px;
+            position: absolute;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            top: 50;
+            right: -20px;
+            cursor: pointer;
+            & img{
+                transform: rotate(90deg);
+            }
+        }
+        &__arrowButton{
+            width: 15px;
+            height: 15px;
+            position: absolute;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            top: 50;
+            right: -20px;
+            cursor: pointer;
+            & img{
+                transform: rotate(270deg);
+            }
+        }
+        &__title{
+            cursor: pointer;
+            color: black;
+            word-wrap: break-word;
+        }
+        &__logout{
+            width: 100%;
+            padding: 10px 0;
+            position: absolute;
+            top: 25px;
+            right: -20px;
+            background-color: black;
+            color: white;  
+            & span{
+                cursor: pointer;
+            }
+        }
+    }
+}

@@ -1,0 +1,32 @@
+.archive{
+    margin-bottom: 30px;
+    position: relative;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+    border-radius: 10px;
+    color: gray;
+    cursor: pointer;
+    &:hover{
+        background-color: rgba(200, 198, 198, 0.522);
+    }
+    &--title{
+        width: 132px;
+        color: black;
+        margin-right: 10px;
+    }
+    &--complaint{
+        color: black;
+        text-overflow: ellipsis;
+        word-wrap: break-word;
+    }
+    &--block__date{
+        color: black;
+        width: 120px;
+        margin-right: 20px;
+    }
+}
+
+
